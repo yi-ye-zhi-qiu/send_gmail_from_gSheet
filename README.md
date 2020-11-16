@@ -7,3 +7,5 @@ Steps </br>
 - Copy source doc. name & ID onto gSheet </br>
 - customize the email appearence (subject, content, etc.) </br>
 - run send_email.gs </br>
+
+Example: https://docs.google.com/spreadsheets/d/16dDvwOQeqVL86UWzq6K6z31xNBWnOWwSrSKnxRcuiOU/edit#gid=0
