@@ -21,15 +21,15 @@ function send_email() {
     //parameter input can be anything
     var content = row[2] //has to be written in html if you want it to look nice
     //like var content = row[2] + count
-    var emailSent = row[4] //used to mark the email as sent (prevents duplicates)
+    var emailSent = row[3] //used to mark the email as sent (prevents duplicates)
+    var fileName = row[4] //put fileName here
     var fileId = row[5] //put fileId here
-    var fileName = row[6] //put fileName here
-    var filetype = row[7] //pdf or not_pdf essentially
+    var filetype = row[6] //pdf or not_pdf essentially
 
     //SEND THE EMAIL
     if (emailSent != EMAIL_SENT) { //prevents duplicates
       var file = DriveApp.getFileById(fileId);
-      if(filetype == "png"){
+      if(filetype == "not_pdf"){
         MailApp.sendEmail({
           to: emailAddress,
           subject: subject,
